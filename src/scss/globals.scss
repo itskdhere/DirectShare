@@ -1,0 +1,10 @@
+@mixin flex-center-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+$cds-white : #ffffff;
+$cds-g10 : #f4f4f4;
+$cds-g90 : #262626;
+$cds-g100 : #161616;

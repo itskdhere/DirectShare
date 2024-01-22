@@ -1,7 +1,7 @@
 {
   "name": "directshare",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "author": "itskdhere",
   "dependencies": {
     "@carbon/icons-react": "^11.34.0",
     "@carbon/react": "^1.48.0",

@@ -1,3 +1,4 @@
+{/* @ts-ignore */ }
 import { FlexGrid, CodeSnippet, InlineLoading, FileUploader, Button, Row, Column } from '@carbon/react';
 import { Share, StopFilledAlt, SendAltFilled as CarbonSendIcon } from '@carbon/icons-react';
 import { Link } from 'react-router-dom';
@@ -9,7 +10,7 @@ import './Send.modules.scss';
 
 const Send: FC = () => {
   const [isFileSelectionDone, setIsFileSelectionDone] = useState(false);
-  const [isCodeLoading, setIsCodeLoading] = useState(true);
+  const [isCodeLoading, setIsCodeLoading] = useState(false);
 
   return (
     <>
@@ -42,7 +43,7 @@ const Send: FC = () => {
           </Row>
           <Row className='send-files-btn-container-row'>
             <Column className='send-files-btn-container-col' sm={{ span: 3, offset: 0 }}>
-              <Button onClick={() => setIsFileSelectionDone(true)} type="submit" kind='primary' renderIcon={CarbonSendIcon} className="send-files-btn">
+              <Button onClick={() => { setIsFileSelectionDone(true); setIsCodeLoading(true); }} type="submit" kind='primary' renderIcon={CarbonSendIcon} className="send-files-btn">
                 Send
               </Button>
               <Link to='/'>

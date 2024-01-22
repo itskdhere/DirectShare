@@ -1,6 +1,7 @@
 # Misc.
 temp/
 tmp/
+.env
 
 # Logs
 logs

@@ -1,0 +1,21 @@
+@import './../../scss/globals.scss';
+
+.header-spacing {
+  height: 50px;
+}
+
+.title {
+  height: 60px;
+}
+
+.description {
+  height: 60px;
+}
+
+.send-receive-btn-container-row,
+.send-receive-btn-container-col {
+  @include flex-center-center();
+  background-color: $cds-g10;
+  height: 250px;
+  user-select: none;
+}

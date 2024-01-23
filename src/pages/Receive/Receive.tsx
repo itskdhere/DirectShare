@@ -20,7 +20,7 @@ const Receive: FC = () => {
           <Row className='description'></Row>
           <Row className='receive-url-code-container-row'>
             <Column className='receive-url-code-container-col' sm={{ span: 3, offset: 0 }}>
-              <TextInput id="receive-url-code-input" type="text" labelText="Enter Receive Link / Code:" helperText={`Enter Either "${window.location.href}?code=a1b2c3" Or "a1b2c3"`} placeholder="Link / Code" />
+              <TextInput id="receive-url-code-input" type="text" labelText="Enter Receive Link / Code:" helperText="Or, Scan The QR Code To Receive File(s)." placeholder="Link / Code" />
             </Column>
           </Row>
           <Row className='receive-files-btn-container-row'>

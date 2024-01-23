@@ -7,7 +7,7 @@ Share Any Files Peer-To-Peer
 
 ## 📡 Setup Locally:
 ### 📝 Prerequisites:
-- [Docker and Docker Compose](https://docs.docker.com/get-docker/)
+- [Docker & Docker Compose](https://docs.docker.com/get-docker/)
 
 ### 🚀 Getting Started:
 1. Clone the repository to your local machine:
@@ -26,12 +26,17 @@ cp .env.example .env
 ```
 Then edit the `.env` file and add the required environment variables accordingly.
 
-4. Build & Run the project:
+4. Create a custom docker network:
 ```bash
-docker compose up -d --build
+docker network create itskdhere
 ```
 
-5. Visit: <a href="http://localhost:8080/" target="_blank" rel="noopener noreferrer">http://localhost:8080</a> 🎉
+5. Build and run the app:
+```bash
+docker compose up -d
+```
+
+6. Visit: <a href="http://localhost:8080/" target="_blank" rel="noopener noreferrer">http://localhost:8080</a> 🎉
 
 
 <p align='center'>--🙂--</p>

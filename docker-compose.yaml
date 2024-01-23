@@ -9,3 +9,8 @@ services:
       - .env
     ports:
       - 8080:$PORT
+
+networks:
+  default:
+    external: true
+    name: itskdhere
